@@ -88,7 +88,8 @@
           </ul>
         </nav>
         <div class="page-header__contacts">
-          <p>С 10 до 20, ежедневно <b class="page-header__phone">8 812 450-25-25</b></p>
+          <p>С 10 до 20, ежедневно</p>
+          <a href="tel:+78124502525">8 812 450-25-25</a>
         </div>
       </header>
       <main class="main-content">
@@ -103,15 +104,12 @@
           <form class="filters__form" action="https://htmlacademy.ru" method="GET">
             <fieldset class="filters__field">
               <legend class="filters__field-title">Сортировка:</legend>
-              <a class="filters__dropdown" href="#">
-                <span>По популярности</span>
-                <ul class="filters__sort-list">
-                  <li class="filters__sort-item">По популярности</li>
-                  <li class="filters__sort-item">Сначала недорогие</li>
-                  <li class="filters__sort-item">Сначала дорогие</li>
-                  <li class="filters__sort-item">по жирности</li>
-                </ul>
-              </a>
+              <select class="filters__sort-list">
+                <option class="filters__sort-item">По популярности</option>
+                <option class="filters__sort-item">Сначала недорогие</option>
+                <option class="filters__sort-item">Сначала дорогие</option>
+                <option class="filters__sort-item">по жирности</option>
+              </select>
             </fieldset>
             <fieldset class="filters__field">
               <legend class="filters__field-title">Цена: <span class="filters__min-price">100 руб.</span> - <span class="filters__max-price">500 руб.</span></legend>
@@ -130,7 +128,7 @@
                   <label for="fat-1"><input type="radio" id="fat-1" name="fattiness" value="0%">0%</label>
                 </li>
                 <li class="filters__item">
-                  <label for="fat-2"><input type="radio" id="fat-2" name="fattiness" value="below-10%">до 10%</label>
+                  <label for="fat-2"><input type="radio" id="fat-2" name="fattiness" value="below-10%" checked>до 10%</label>
                 </li>
                 <li class="filters__item">
                   <label for="fat-3"><input type="radio" id="fat-3" name="fattiness" value="below-30%">до 30%</label>
@@ -144,10 +142,10 @@
               <legend class="filters__field-title">Наполнители:</legend>
               <ul class="filters__list">
                 <li class="filter__item">
-                  <label for="filler-1"><input type="checkbox" id="filler-1" name="chocolate">шоколадные</label>
+                  <label for="filler-1"><input type="checkbox" id="filler-1" name="chocolate" checked>шоколадные</label>
                 </li>
                 <li class="filter__item">
-                  <label for="filler-2"><input type="checkbox" id="filler-2" name="sugar">сахарные присыпки</label>
+                  <label for="filler-2"><input type="checkbox" id="filler-2" name="sugar" checked>сахарные присыпки</label>
                 </li>
                 <li class="filter__item">
                   <label for="filler-3"><input type="checkbox" id="filler-3" name="fruit">фрукты</label>
