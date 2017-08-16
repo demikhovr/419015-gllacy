@@ -14,53 +14,53 @@
           <a class="logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Магазин Глейси"></a>
           <nav class="page-header__main-nav  main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__item  main-nav__item--active  main-nav__item--dropdown">
-                <a class="main-nav__item-link">Каталог</a>
+              <li class="main-nav__item  main-nav__item--dropdown">
+                <a class="main-nav__link" href="shop.html">Каталог</a>
                 <ul class="dropdown">
-                    <li class="dropdown__item  dropdown__item--news"><a href="new.html">Новинки</a></li>
-                    <li class="dropdown__item  dropdown__item--active"><a>Сливочное</a></li>
-                    <li class="dropdown__item"><a href="sorbets.html">Щербеты</a></li>
-                    <li class="dropdown__item"><a href="fruit.html">Фруктовый лед</a></li>
-                    <li class="dropdown__item"><a href="melorin.html">Мелорин</a></li>
-                  </ul>
+                  <li class="dropdown__item  dropdown__item--news"><a href="new.html">Новинки</a></li>
+                  <li class="dropdown__item"><a href="catalog.html">Сливочное</a></li>
+                  <li class="dropdown__item"><a href="sorbets.html">Щербеты</a></li>
+                  <li class="dropdown__item"><a href="fruit.html">Фруктовый лед</a></li>
+                  <li class="dropdown__item"><a href="melorin.html">Мелорин</a></li>
+                </ul>
               </li>
-              <li class="main-nav__item"><a class="main-nav__item-link" href="delivery.html">Доставка и оплата</a></li>
-              <li class="main-nav__item"><a class="main-nav__item-link" href="about.html">О компании</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="delivery.html">Доставка и оплата</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="about.html">О компании</a></li>
             </ul>
             <ul class="main-nav__user-list">
               <li class="main-nav__user-item  main-nav__user-item--search">
-                <a><span class="visually-hidden">Поиск</span></a>
-                <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-                  <label for="user-search">
-                    <input type="search" id="user-search" name="search" placeholder="Что ищем?">
+                <a class="main-nav__user-link" href="search.html"><span class="visually-hidden">Поиск</span></a>
+                <form class="main-nav__user-form  search-form" action="https://echo.htmlacademy.ru" method="GET">
+                  <label class="search-form__label" for="user-search">
+                    <input class="search-form__field" type="search" id="user-search" name="search">
+                    <span class="search-form__placeholder">Что ищем?</span>
                   </label>
-                  <button type="submit">Найти</button>
                 </form>
               </li>
               <li class="main-nav__user-item  main-nav__user-item--login">
-                <a href="login.html">Вход</a>
-                <div class="login">
-                  <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-                    <label for="login-email">
-                      <span class="visually-hidden">Введите вашу электронную почту:</span>
-                      <input type="email" id="login-email" name="email" placeholder="Электронная почта">
-                    </label>
-                    <label for="login-password">
-                      <span class="visually-hidden">Введите ваш пароль:</span>
-                      <input type="password" id="login-password" name="password" placeholder="Пароль">
-                    </label>
-                    <div>
-                      <button class="login__btn  btn-red" type="submit">Войти</button>
-                      <ul class="login__list">
-                        <li><a class="login__link" href="recovery.html">Забыли пароль?</a></li>
-                        <li><a class="login__link" href="sign-up.html">Новая регистрация</a></li>
-                      </ul>
-                    </div>
-                  </form>
-                </div>
+                <a class="main-nav__user-link"  href="login.html">Вход</a>
+                <form class="main-nav__user-form  login-form" action="https://echo.htmlacademy.ru" method="POST">
+                  <label class="login-form__label" for="login-email">
+                    <span class="visually-hidden">Введите вашу электронную почту:</span>
+                    <input class="login-form__field" type="text" id="login-email" name="email" required>
+                    <span class="login-form__placeholder">Электронная почта</span>
+                  </label>
+                  <label class="login-form__label" for="login-password">
+                    <span class="visually-hidden">Введите ваш пароль:</span>
+                    <input class="login-form__field" type="password" id="login-password" name="password" required>
+                    <span class="login-form__placeholder">Пароль</span>
+                  </label>
+                  <div class="login-form__bottom">
+                    <button class="login__btn  btn-red" type="submit">Войти</button>
+                    <ul class="login__list">
+                      <li><a class="login__link" href="recovery.html">Забыли пароль?</a></li>
+                      <li><a class="login__link" href="sign-up.html">Новая регистрация</a></li>
+                    </ul>
+                  </div>
+                </form>
               </li>
               <li class="main-nav__user-item  main-nav__user-item--cart">
-                <a href="cart.html">
+                <a class="main-nav__user-link" href="cart.html">
                   <span class="visually-hidden">Корзина</span>
                   <span class="cart__btn  cart__btn--empty">Пусто</span>
                   <span class="cart__btn  cart__btn--full">2 товара</span>
