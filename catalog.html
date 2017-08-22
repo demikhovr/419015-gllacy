@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Каталог Глейси</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min.normalize.css">
+    <link rel="stylesheet" href="css/min.style.css">
   </head>
   <body>
     <div class="page-wrapper">
-      <div class="content-wrapper">
-        <header class="page-header">
+      <header class="page-header">
+        <div class="page-header__wrapper">
           <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
           <a class="logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Магазин Глейси"></a>
           <nav class="page-header__main-nav  main-nav">
             <ul class="main-nav__list">
-              <li class="main-nav__item  main-nav__item--dropdown">
+              <li class="main-nav__item  main-nav__item--active  main-nav__item--dropdown">
                 <a class="main-nav__link" href="shop.html">Каталог</a>
                 <ul class="dropdown">
                   <li class="dropdown__item  dropdown__item--news"><a href="new.html">Новинки</a></li>
@@ -59,7 +59,7 @@
                   </div>
                 </form>
               </li>
-              <li class="main-nav__user-item  main-nav__user-item--cart  main-nav__user-item--cart-full">
+              <li class="main-nav__user-item  main-nav__user-item--cart-full">
                 <a class="main-nav__user-link" href="cart.html">
                   <span class="visually-hidden">Корзина</span>
                   <span class="cart__btn  cart__btn--full">2 товара</span>
@@ -69,18 +69,18 @@
                     <caption class="cart__total">Итого: 750 руб.</caption>
                     <tbody>
                       <tr class="cart__item">
+                        <td class="cart__item-cancel"><button type="button"><span class="visually-hidden">Отмена</span></button></td>
                         <td class="cart__item-pic"><img src="img/catalog-item-1-small.jpg" width="33" height="33" alt="Мороженое"></td>
                         <td class="cart__item-title">Пломбир с апельсиновым джемом</td>
                         <td class="cart__item-amount">1,5 кг x <span>200 руб.</span></td>
                         <td class="cart__item-price">300 руб.</td>
-                        <td class="cart__item-cancel"><button type="button"><span class="visually-hidden">Отмена</span></button></td>
                       </tr>
                       <tr class="cart__item">
+                        <td class="cart__item-cancel"><button type="button"><span class="visually-hidden">Отмена</span></button></td>
                         <td class="cart__item-pic"><img src="img/catalog-item-2-small.jpg" width="33" height="33" alt="Мороженое"></td>
                         <td class="cart__item-title">Клубничный пломбир с присыпкой из белого шоколада</td>
                         <td class="cart__item-amount">1,5 кг x <span>200 руб.</span></td>
                         <td class="cart__item-price">300 руб.</td>
-                        <td class="cart__item-cancel"><button type="button"><span class="visually-hidden">Отмена</span></button></td>
                       </tr>
                     </tbody>
                   </table>
@@ -93,8 +93,10 @@
             <p>С 10 до 20, ежедневно</p>
             <a href="tel:+78124502525">8 812 450-25-25</a>
           </div>
-        </header>
-        <main class="main-content">
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="main-content__wrapper">
           <h1 class="main-content__title">Сливочное мороженое</h1>
           <ul class="main-content__breadcrumbs  breadcrumbs">
             <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
@@ -107,14 +109,14 @@
               <fieldset class="filter-field">
                 <legend class="filter-field__title">Сортировка:</legend>
                 <select class="filter-field__inner  filter-sort">
-                  <option class="filter-sort__item">По популярности</option>
-                  <option class="filters-sort__item">Сначала недорогие</option>
-                  <option class="filters-sort__item">Сначала дорогие</option>
+                  <option class="filter-sort__item">по популярности</option>
+                  <option class="filters-sort__item">сначала недорогие</option>
+                  <option class="filters-sort__item">сначала дорогие</option>
                   <option class="filters-sort__item">по жирности</option>
                 </select>
               </fieldset>
               <fieldset class="filter-field">
-                <legend class="filter-field__title">Цена: <span class="filter-field__min-price">100 руб.</span> - <span class="filter-field__max-price">500 руб.</span></legend>
+                <legend class="filter-field__title">Цена: <span class="filter-field__min-price">100 руб.</span> – <span class="filter-field__max-price">500 руб.</span></legend>
                 <div class="filter-field__inner  filter-price">
                   <div class="filter-price__scale">
                     <div class="filter-price__bar"></div>
@@ -125,7 +127,7 @@
               </fieldset>
               <fieldset class="filter-field">
                 <legend class="filter-field__title">Жирность:</legend>
-                <ul class="filter-field__inner  filter-field__list">
+                <ul class="filter-field__inner  filter-list  filter-list--fat">
                   <li class="filter-radio">
                     <input class="filter-radio__input" type="radio" id="fat-1" name="fattiness" value="0%">
                     <label class="filter-radio__label" for="fat-1">0%</label>
@@ -146,7 +148,7 @@
               </fieldset>
               <fieldset class="filter-field">
                 <legend class="filter-field__title">Наполнители:</legend>
-                <ul class="filter-field__inner  filter-field__list">
+                <ul class="filter-field__inner  filter-list  filter-list--fill">
                   <li class="filter-checkbox">
                     <input class="filter-checkbox__input" type="checkbox" id="filler-1" name="chocolate" checked>
                     <label class="filter-checkbox__label" for="filler-1">шоколадные</label>
@@ -195,7 +197,7 @@
                 </div>
                 <a class="catalog__item-btn  btn-red" href="#">Быстрый просмотр</a>
               </li>
-              <li class="catalog__item  catalog__item--hit">
+              <li class="catalog__item">
                 <h3 class="catalog__item-title"><a href="catalog-item-3.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
                 <div class="catalog__item-inner">
                   <p class="catalog__item-price">355<img src="img/ruble.svg" width="31" height="36" alt="рублей"><span>/кг</span></p>
@@ -205,7 +207,7 @@
                 </div>
                 <a class="catalog__item-btn  btn-red" href="#">Быстрый просмотр</a>
               </li>
-              <li class="catalog__item  catalog__item--hit">
+              <li class="catalog__item">
                 <h3 class="catalog__item-title"><a href="catalog-item-4.html">Сливочное крем-брюле с карамельной подливкой</a></h3>
                 <div class="catalog__item-inner">
                   <p class="catalog__item-price">415<img src="img/ruble.svg" width="31" height="36" alt="рублей"><span>/кг</span></p>
@@ -306,8 +308,10 @@
               <li class="pagination__item  pagination__item--next"><a href="#"><span class="visually-hidden">Следующая страница</span></a></li>
             </ul>
           </section>
-        </main>
-        <footer class="page-footer">
+        </div>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
           <div class="page-footer__socials">
             <h2 class="visually-hidden">Вы можете найти нас в соцсетях:</h2>
             <ul class="socials-list">
@@ -329,8 +333,8 @@
             <p class="page-footer__copyright-info">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy ©</a> 2017</p>
             <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy"></a>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
