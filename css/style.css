@@ -182,7 +182,7 @@ img {
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 27px;
+  padding: 0 2.25%;
 }
 
 .page-header__wrapper {
@@ -196,7 +196,7 @@ img {
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 27px;
+  padding: 0 2.25%;
   padding-top: 9px;
 }
 
@@ -496,7 +496,7 @@ img {
 }
 
 .main-nav__user-item--cart .main-nav__user-link {
-  padding: 9px 34px 7px 45px;
+  padding: 9px 32px 7px 45px;
 
   background-image: url("../img/icon-cart.svg");
   background-position: 17px 7px;
@@ -1101,7 +1101,7 @@ img {
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 27px;
+  padding: 0 2.25%;
   padding-top: 20px;
 }
 
@@ -1675,7 +1675,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 41px;
-  padding: 0 27px;
+  padding: 0 2.25%;
 }
 
 .slider__list {
@@ -1784,7 +1784,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 40px;
-  padding: 0 27px;
+  padding: 0 2.25%;
 }
 
 .offers__list {
@@ -1882,7 +1882,7 @@ img {
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 27px;
+  padding: 0 2.25%;
 }
 
 .catalog__list {
@@ -2101,7 +2101,7 @@ img {
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 27px;
+  padding: 0 2.25%;
 }
 
 .info__content {
@@ -2194,7 +2194,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 40px;
-  padding: 0 27px;
+  padding: 0 2.25%;
 
   -ms-flex-pack: justify;
 }
@@ -2448,7 +2448,7 @@ img {
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 27px;
+  padding: 0 2.25%;
   padding-top: 62px;
   padding-bottom: 62px;
 }
@@ -2551,7 +2551,7 @@ img {
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 27px;
+  padding: 0 2.25%;
   padding-top: 19px;
   padding-bottom: 23px;
 
